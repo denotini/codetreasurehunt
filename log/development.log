@@ -2927,3 +2927,65 @@ Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-06 23:26:26 -0300
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:03:01 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (1.9ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 141ms (Views: 115.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/scaffolds.self-18f7d6c93e54501e900d7877cb6ec59bc10f52425d6efd64f747510709c7772e.css?body=1" for 127.0.0.1 at 2015-07-07 00:03:02 -0300
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-07 00:03:02 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-07 00:03:02 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-07 00:03:02 -0300
+
+
+Started GET "/assets/application.self-0183c1737a771397bb3a5d7c5b6275ae74c7073e91c6cbe90d7806f0202e3039.css?body=1" for 127.0.0.1 at 2015-07-07 00:03:02 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-07 00:03:02 -0300
+
+
+Started GET "/assets/treasures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-07 00:03:02 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-07 00:03:02 -0300
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.4ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.self-18f7d6c93e54501e900d7877cb6ec59bc10f52425d6efd64f747510709c7772e.css?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+
+
+Started GET "/assets/treasures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+
+
+Started GET "/assets/application.self-0183c1737a771397bb3a5d7c5b6275ae74c7073e91c6cbe90d7806f0202e3039.css?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
