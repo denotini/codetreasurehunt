@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @treasure.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @treasure.status %>
+</p>
+
+<%= link_to 'Edit', edit_treasure_path(@treasure) %> |
+<%= link_to 'Back', treasures_path %>
