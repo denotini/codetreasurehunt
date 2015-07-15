@@ -2989,3 +2989,1578 @@ Started GET "/assets/treasures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44d
 
 
 Started GET "/assets/application.self-0183c1737a771397bb3a5d7c5b6275ae74c7073e91c6cbe90d7806f0202e3039.css?body=1" for 127.0.0.1 at 2015-07-07 00:04:36 -0300
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:15:00 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (1.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (22.7ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fd46dedeec0>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%- treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb__4114691095712794933_70275160320820'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb__4114691095712794933_70275160320820'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (39.9ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:16:21 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.6ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fd46bfe2620>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%- treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb__4114691095712794933_70275160320820'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb__4114691095712794933_70275160320820'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (30.3ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:17:17 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fd4738493e8>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%- treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb__4114691095712794933_70275160320820'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb__4114691095712794933_70275160320820'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (32.8ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:17:31 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.2ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fd46bfa0090>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb__4114691095712794933_70275160622100'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb__4114691095712794933_70275160622100'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:18:13 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fd46cfd4588>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb__4114691095712794933_70275160622100'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb__4114691095712794933_70275160622100'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.9ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:19:10 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.2ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fd46becda00>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb__4114691095712794933_70275160622100'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb__4114691095712794933_70275160622100'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (30.3ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:20:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.5ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27ad1cdf8>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3276571368898242246_70236629860060'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3276571368898242246_70236629860060'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (42.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (16.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (34.8ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:21:01 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.2ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27a317da8>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3276571368898242246_70236629860060'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3276571368898242246_70236629860060'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (41.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (32.3ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:23:47 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.6ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27a497930>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3276571368898242246_70236629860060'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3276571368898242246_70236629860060'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (19.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (37.4ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:24:28 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.3ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27a55f868>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:        <!-- <td width="150"><%= treasure.assignee %></td>-->
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3276571368898242246_70236626353700'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3276571368898242246_70236626353700'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (42.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (36.6ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:24:37 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27dbad668>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:        <!-- <td width="150"><%= treasure.assignee %></td>-->
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3276571368898242246_70236626353700'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3276571368898242246_70236626353700'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (39.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (28.6ms)
+
+
+Started GET "/treasures" for 127.0.0.1 at 2015-07-07 00:24:47 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.2ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 295ms (Views: 294.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-18f7d6c93e54501e900d7877cb6ec59bc10f52425d6efd64f747510709c7772e.css?body=1" for 127.0.0.1 at 2015-07-07 00:24:47 -0300
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-07 00:24:47 -0300
+
+
+Started GET "/assets/application.self-0183c1737a771397bb3a5d7c5b6275ae74c7073e91c6cbe90d7806f0202e3039.css?body=1" for 127.0.0.1 at 2015-07-07 00:24:47 -0300
+
+
+Started GET "/assets/treasures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-07 00:24:48 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-07 00:24:48 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-07 00:24:48 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-07 00:24:48 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-07 00:24:48 -0300
+
+
+Started GET "/treasures/new" for 127.0.0.1 at 2015-07-07 00:24:53 -0300
+Processing by TreasuresController#new as HTML
+  Rendered treasures/_form.html.erb (68.3ms)
+  Rendered treasures/new.html.erb within layouts/application (69.4ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27f456430>):
+    21:   </div>
+    22:     <div class="field">
+    23:     <%= f.label :assignee %><br>
+    24:     <%= f.text_field :assignee %>
+    25:   </div>
+    26:   <div class="actions">
+    27:     <%= f.submit %>
+  app/views/treasures/_form.html.erb:24:in `block in _app_views_treasures__form_html_erb__1855570496284445979_70236667901960'
+  app/views/treasures/_form.html.erb:1:in `_app_views_treasures__form_html_erb__1855570496284445979_70236667901960'
+  app/views/treasures/new.html.erb:3:in `_app_views_treasures_new_html_erb___3465884028379767551_70236667833620'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (58.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (31.1ms)
+
+
+Started GET "/treasures/new" for 127.0.0.1 at 2015-07-07 00:24:54 -0300
+Processing by TreasuresController#new as HTML
+  Rendered treasures/_form.html.erb (7.1ms)
+  Rendered treasures/new.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27f19e2b0>):
+    21:   </div>
+    22:     <div class="field">
+    23:     <%= f.label :assignee %><br>
+    24:     <%= f.text_field :assignee %>
+    25:   </div>
+    26:   <div class="actions">
+    27:     <%= f.submit %>
+  app/views/treasures/_form.html.erb:24:in `block in _app_views_treasures__form_html_erb__1855570496284445979_70236666691240'
+  app/views/treasures/_form.html.erb:1:in `_app_views_treasures__form_html_erb__1855570496284445979_70236666691240'
+  app/views/treasures/new.html.erb:3:in `_app_views_treasures_new_html_erb___3465884028379767551_70236666423960'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (27.0ms)
+
+
+Started GET "/treasures/new" for 127.0.0.1 at 2015-07-07 00:29:00 -0300
+Processing by TreasuresController#new as HTML
+  Rendered treasures/_form.html.erb (9.4ms)
+  Rendered treasures/new.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27cc4b710>):
+    21:   </div>
+    22:     <div class="field">
+    23:     <%= f.label :assignee %><br>
+    24:     <%= f.text_field :assignee %>
+    25:   </div>
+    26:   <div class="actions">
+    27:     <%= f.submit %>
+  app/views/treasures/_form.html.erb:24:in `block in _app_views_treasures__form_html_erb__1855570496284445979_70236666691240'
+  app/views/treasures/_form.html.erb:1:in `_app_views_treasures__form_html_erb__1855570496284445979_70236666691240'
+  app/views/treasures/new.html.erb:3:in `_app_views_treasures_new_html_erb___3465884028379767551_70236666423960'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (30.3ms)
+
+
+Started GET "/treasures/" for 127.0.0.1 at 2015-07-07 00:29:11 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.5ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc28086ad90>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3276571368898242246_70236678291860'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3276571368898242246_70236678291860'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (31.1ms)
+
+
+Started GET "/treasures/" for 127.0.0.1 at 2015-07-07 00:30:20 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27cfd3838>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3276571368898242246_70236678291860'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3276571368898242246_70236678291860'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (26.6ms)
+
+
+Started GET "/treasures/" for 127.0.0.1 at 2015-07-07 00:32:53 -0300
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.3ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007fc27ce8b3b8>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3276571368898242246_70236678291860'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3276571368898242246_70236678291860'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (30.3ms)
+
+
+Started GET "/treasures/" for 127.0.0.1 at 2015-07-07 00:36:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007f8d67280d60>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (43.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (33.6ms)
+
+
+Started GET "/treasures/" for 127.0.0.1 at 2015-07-07 00:36:20 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.3ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007f8d6597eba0>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (41.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/treasures/" for 127.0.0.1 at 2015-07-07 00:36:23 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.3ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007f8d6727af28>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (28.5ms)
+
+
+Started GET "/treasures/" for 127.0.0.1 at 2015-07-07 00:36:28 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007f8d6714a0e0>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (65.0ms)
+
+
+Started GET "/treasures/" for 127.0.0.1 at 2015-07-07 00:37:55 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.1ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007f8d64eae518>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___3814184251689718909_70122648280460'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (31.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/treasures/" for ::1 at 2015-07-07 16:02:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.6ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007faeac787a78>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___4261638644015643735_70194096666100'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___4261638644015643735_70194096666100'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (44.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (41.0ms)
+
+
+Started GET "/treasures/" for ::1 at 2015-07-07 16:02:57 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.2ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007faeb0210ac8>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___4261638644015643735_70194096666100'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___4261638644015643735_70194096666100'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (42.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (24.8ms)
+
+
+Started GET "/treasures/" for ::1 at 2015-07-07 16:02:59 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `assignee' for #<Treasure:0x007faeac77fc88>):
+    17:       <tr>
+    18:         <td><%= treasure.description %></td>
+    19:         <td width="70"><%= treasure.status %></td>
+    20:         <td width="150"><%= treasure.assignee %></td>
+    21:         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
+    22:         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+  app/views/treasures/index.html.erb:20:in `block in _app_views_treasures_index_html_erb___4261638644015643735_70194096666100'
+  app/views/treasures/index.html.erb:16:in `_app_views_treasures_index_html_erb___4261638644015643735_70194096666100'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (13.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (29.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAssigneeToTreasures (20150707190411)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mALTER TABLE "treasures" ADD "assignee" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150707190411"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/treasures/" for ::1 at 2015-07-07 16:04:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.4ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 312ms (Views: 287.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/scaffolds.self-18f7d6c93e54501e900d7877cb6ec59bc10f52425d6efd64f747510709c7772e.css?body=1" for ::1 at 2015-07-07 16:04:29 -0300
+
+
+Started GET "/assets/application.self-0183c1737a771397bb3a5d7c5b6275ae74c7073e91c6cbe90d7806f0202e3039.css?body=1" for ::1 at 2015-07-07 16:04:29 -0300
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-07 16:04:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:04:29 -0300
+
+
+Started GET "/assets/treasures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-07 16:04:29 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:04:29 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-07 16:04:29 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-07 16:04:29 -0300
+
+
+Started GET "/treasures/new" for ::1 at 2015-07-07 16:06:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TreasuresController#new as HTML
+  Rendered treasures/_form.html.erb (24.2ms)
+  Rendered treasures/new.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 329ms (Views: 301.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/treasures" for ::1 at 2015-07-07 16:06:12 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.5ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/treasures/search?status=open" for ::1 at 2015-07-07 16:17:40 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"open", "id"=>"search"}
+  [1m[36mTreasure Load (0.3ms)[0m  [1mSELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 16ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (32.5ms)
+
+
+Started GET "/treasures/search?status=open" for ::1 at 2015-07-07 16:17:51 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"open", "id"=>"search"}
+  [1m[35mTreasure Load (0.1ms)[0m  SELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (31.9ms)
+
+
+Started GET "/treasures/search?status=OPNE" for ::1 at 2015-07-07 16:17:52 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"OPNE", "id"=>"search"}
+  [1m[36mTreasure Load (0.2ms)[0m  [1mSELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.3ms)
+
+
+Started GET "/treasures/search?status=OPNE" for ::1 at 2015-07-07 16:17:55 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"OPNE", "id"=>"search"}
+  [1m[35mTreasure Load (0.1ms)[0m  SELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (53.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (24.8ms)
+
+
+Started GET "/treasures/search?status=OPEN" for ::1 at 2015-07-07 16:17:56 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"OPEN", "id"=>"search"}
+  [1m[36mTreasure Load (0.2ms)[0m  [1mSELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (37.0ms)
+
+
+Started GET "/treasures/search?status=OPNE" for ::1 at 2015-07-07 16:18:02 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"OPNE", "id"=>"search"}
+  [1m[35mTreasure Load (0.1ms)[0m  SELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.2ms)
+
+
+Started GET "/treasures/search?status=OPEN" for ::1 at 2015-07-07 16:18:02 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"OPEN", "id"=>"search"}
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (12.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.1ms)
+
+
+Started GET "/treasures/search?status=OPNE" for ::1 at 2015-07-07 16:18:02 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"OPNE", "id"=>"search"}
+  [1m[35mTreasure Load (0.1ms)[0m  SELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (24.3ms)
+
+
+Started GET "/treasures/search?status=OPEN" for ::1 at 2015-07-07 16:18:03 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"status"=>"OPEN", "id"=>"search"}
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=search):
+  app/controllers/treasures_controller.rb:67:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (51.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (24.1ms)
+
+
+Started GET "/treasures" for ::1 at 2015-07-07 16:18:28 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-07 16:18:28 -0300
+
+
+Started GET "/treasures?status=CLOSED" for ::1 at 2015-07-07 16:18:29 -0300
+Processing by TreasuresController#index as HTML
+  Parameters: {"status"=>"CLOSED"}
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-07 16:18:29 -0300
+
+
+Started GET "/treasure?status=CLOSED" for ::1 at 2015-07-07 16:19:44 -0300
+
+ActionController::RoutingError (No route matches [GET] "/treasure"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (16.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (33.1ms)
+
+
+Started GET "/treasures?status=CLOSED" for ::1 at 2015-07-07 16:19:49 -0300
+Processing by TreasuresController#index as HTML
+  Parameters: {"status"=>"CLOSED"}
+  [1m[35mTreasure Load (0.1ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-07 16:19:49 -0300
+
+
+Started GET "/treasures?status='CLOSED'" for ::1 at 2015-07-07 16:19:56 -0300
+Processing by TreasuresController#index as HTML
+  Parameters: {"status"=>"'CLOSED'"}
+  [1m[36mTreasure Load (0.3ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 120ms (Views: 117.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/treasures?Status='CLOSED'" for ::1 at 2015-07-07 16:20:04 -0300
+Processing by TreasuresController#index as HTML
+  Parameters: {"Status"=>"'CLOSED'"}
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/treasures?Status=CLOSED" for ::1 at 2015-07-07 16:20:13 -0300
+Processing by TreasuresController#index as HTML
+  Parameters: {"Status"=>"CLOSED"}
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/treasures?Status=CLOSED" for ::1 at 2015-07-08 18:46:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TreasuresController#index as HTML
+  Parameters: {"Status"=>"CLOSED"}
+  [1m[35mTreasure Load (0.5ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 314ms (Views: 291.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-08 18:46:02 -0300
+
+
+Started GET "/treasures" for ::1 at 2015-07-08 18:46:10 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-08 18:46:10 -0300
+
+
+Started GET "/treasures" for ::1 at 2015-07-08 18:46:10 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/treasures" for ::1 at 2015-07-08 18:46:28 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mTreasure Load (0.7ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 61ms (Views: 53.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.self-18f7d6c93e54501e900d7877cb6ec59bc10f52425d6efd64f747510709c7772e.css?body=1" for ::1 at 2015-07-08 18:46:28 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-08 18:46:28 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-08 18:46:28 -0300
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-08 18:46:28 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-08 18:46:28 -0300
+
+
+Started GET "/assets/application.self-0183c1737a771397bb3a5d7c5b6275ae74c7073e91c6cbe90d7806f0202e3039.css?body=1" for ::1 at 2015-07-08 18:46:28 -0300
+
+
+Started GET "/assets/treasures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-08 18:46:28 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-08 18:46:28 -0300
+
+
+Started GET "/treasures/status=CLOSED" for ::1 at 2015-07-08 18:46:58 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"id"=>"status=CLOSED"}
+  [1m[35mTreasure Load (0.2ms)[0m  SELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 12ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=status=CLOSED):
+  app/controllers/treasures_controller.rb:73:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (40.6ms)
+
+
+Started GET "/treasures/status=CLOSED" for ::1 at 2015-07-08 18:47:07 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"id"=>"status=CLOSED"}
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=status=CLOSED):
+  app/controllers/treasures_controller.rb:73:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (63.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (77.9ms)
+
+
+Started GET "/treasures/status=CLOSED" for ::1 at 2015-07-08 18:47:12 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"id"=>"status=CLOSED"}
+  [1m[35mTreasure Load (0.1ms)[0m  SELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=status=CLOSED):
+  app/controllers/treasures_controller.rb:73:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (23.8ms)
+
+
+Started GET "/treasures/status" for ::1 at 2015-07-08 18:47:13 -0300
+Processing by TreasuresController#show as HTML
+  Parameters: {"id"=>"status"}
+  [1m[36mTreasure Load (0.1ms)[0m  [1mSELECT  "treasures".* FROM "treasures" WHERE "treasures"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Treasure with 'id'=status):
+  app/controllers/treasures_controller.rb:73:in `set_treasure'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (25.4ms)
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-08 18:47:26 -0300
+
+
+Started GET "/" for ::1 at 2015-07-09 20:25:35 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 21ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20150715143723)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150715143723"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/users/signup" for ::1 at 2015-07-15 11:38:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users/signup"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (23.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (59.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (85.3ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-07-15 11:38:30 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.5.1/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.5.1/app/views/devise/registrations/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 420ms (Views: 393.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2015-07-15 11:39:04 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RGc0ZLJf5nt8jfeDI4sA/FAYojeVnd2H4/X3ukt6aN1j2MG6qECapX8rGsOkErg5+j1XQ/jb4MjmF6HUhUtclw==", "user"=>{"email"=>"dnotini@thoughtworks.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'dnotini@thoughtworks.com' LIMIT 1[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "dnotini@thoughtworks.com"], ["encrypted_password", "$2a$10$cozhU5EW4OBl/B1k4sD6ruARg2yhaUdbjUlxIjg8Rs5E7z4zG5O.y"], ["created_at", "2015-07-15 14:39:04.510081"], ["updated_at", "2015-07-15 14:39:04.510081"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-07-15 14:39:04.517508"], ["current_sign_in_at", "2015-07-15 14:39:04.517508"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-07-15 14:39:04.518404"], ["id", 1]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 184ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-15 11:39:04 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-15 11:57:20 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/treasures" for ::1 at 2015-07-15 11:57:21 -0300
+Processing by TreasuresController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTreasure Load (0.5ms)[0m  SELECT "treasures".* FROM "treasures"
+  Rendered treasures/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 243ms (Views: 57.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-15 11:57:21 -0300
+
+
+Started GET "/assets/application.self-0183c1737a771397bb3a5d7c5b6275ae74c7073e91c6cbe90d7806f0202e3039.css?body=1" for ::1 at 2015-07-15 11:57:21 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-15 11:57:21 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-15 11:57:21 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-15 11:57:21 -0300
+
+
+Started GET "/assets/scaffolds.self-18f7d6c93e54501e900d7877cb6ec59bc10f52425d6efd64f747510709c7772e.css?body=1" for ::1 at 2015-07-15 11:57:21 -0300
+
+
+Started GET "/assets/treasures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-15 11:57:21 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-15 11:57:21 -0300
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-07-15 11:57:45 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7gnPEy6K9HfHbkk85aHz+u/2HxNJpZ+1WIQolAt3/jfJtjrNNJWIqcTIpHxiOEs/RdPqZyTjovpdZn76xUbKfQ=="}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-15 11:57:45 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-15 11:57:50 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/treasures" for ::1 at 2015-07-15 11:57:50 -0300
+Processing by TreasuresController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-07-15 11:57:50 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.5.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/devise-3.5.1/app/views/devise/sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/treasures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-15 11:57:50 -0300
+
+
+Started POST "/users/sign_in" for ::1 at 2015-07-15 11:58:08 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qj0UXcpmGkwPnoqL5/9mLd+/nHSDU+FVFVP9EwrhoMlEQ2YjJxqCDn7iq48htguoz/wAszpzX2eKNWzGnGKxRQ==", "user"=>{"email"=>"dnotini@thoughtworks.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "dnotini@thoughtworks.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2015-07-15 14:58:08.759431"], ["sign_in_count", 2], ["updated_at", "2015-07-15 14:58:08.760493"], ["id", 1]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/treasures
+Completed 302 Found in 90ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/treasures" for ::1 at 2015-07-15 11:58:08 -0300
+Processing by TreasuresController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTreasure Load (0.2ms)[0m  [1mSELECT "treasures".* FROM "treasures"[0m
+  Rendered treasures/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 117ms (Views: 114.1ms | ActiveRecord: 0.3ms)

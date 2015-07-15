@@ -18,7 +18,7 @@ class TreasuresControllerTest < ActionController::TestCase
 
   test "should create treasure" do
     assert_difference('Treasure.count') do
-      post :create, treasure: { description: @treasure.description, status: @treasure.status }
+      post :create, treasure: { description: @treasure.description, status: @treasure.status, assignee: @treasure.assignee}
     end
 
     assert_redirected_to treasure_path(assigns(:treasure))
@@ -35,7 +35,7 @@ class TreasuresControllerTest < ActionController::TestCase
   end
 
   test "should update treasure" do
-    patch :update, id: @treasure, treasure: { description: @treasure.description, status: @treasure.status }
+    patch :update, id: @treasure, treasure: { description: @treasure.description, status: @treasure.status, assignee: @treasure.assignee}
     assert_redirected_to treasure_path(assigns(:treasure))
   end
 

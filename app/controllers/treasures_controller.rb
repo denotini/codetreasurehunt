@@ -3,6 +3,12 @@ class TreasuresController < ApplicationController
 
   # GET /treasures
   # GET /treasures.json
+  def status
+    @treasures = Treasure.find(params[:status])
+  end
+
+  # GET /treasures
+  # GET /treasures.json
   def index
     @treasures = Treasure.all
   end
@@ -69,6 +75,6 @@ class TreasuresController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def treasure_params
-      params.require(:treasure).permit(:description, :status)
+      params.require(:treasure).permit(:description, :status, :assignee)
     end
 end

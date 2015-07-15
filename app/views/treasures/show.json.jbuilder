@@ -1,1 +1,1 @@
-json.extract! @treasure, :id, :description, :status, :created_at, :updated_at
+json.extract! @treasure, :id, :description, :status, :assignee :created_at, :updated_at

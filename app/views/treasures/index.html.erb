@@ -7,6 +7,7 @@
     <tr>
       <th>Description</th>
       <th>Status</th>
+      <th> Assignee</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= treasure.description %></td>
         <td width="70"><%= treasure.status %></td>
+        <td width="150"><%= treasure.assignee %></td>
         <td width="50"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <p>
   <strong>Description:</strong>
@@ -8,6 +8,10 @@
 <p>
   <strong>Status:</strong>
   <%= @treasure.status %>
+</p>
+<p>
+  <strong>Assignee:</strong>
+  <%= @treasure.assignee %>
 </p>
 
 <%= link_to 'Edit', edit_treasure_path(@treasure) %> |

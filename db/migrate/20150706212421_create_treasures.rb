@@ -3,6 +3,7 @@ class CreateTreasures < ActiveRecord::Migration
     create_table :treasures do |t|
       t.text :description
       t.string :status
+      t.string :assignee
 
       t.timestamps null: false
     end

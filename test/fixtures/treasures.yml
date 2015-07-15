@@ -3,7 +3,9 @@
 one:
   description: MyText
   status: MyString
+  assignee: MyString
 
 two:
   description: MyText
   status: MyString
+  assignee: MyString
