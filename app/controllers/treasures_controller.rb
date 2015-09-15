@@ -18,6 +18,10 @@ class TreasuresController < ApplicationController
   def show
   end
 
+  def filter
+    @treasures = Treasure.where(status: params[:status].upcase)
+  end
+
   # GET /treasures/new
   def new
     @treasure = Treasure.new

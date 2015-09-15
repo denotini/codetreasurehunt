@@ -16,5 +16,11 @@
         <td width="50"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+
+    <% if @treasures.empty? %>
+      <tr class="center">
+        <td colspan="4">Sorry. Got nothing for you here!!!</td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
