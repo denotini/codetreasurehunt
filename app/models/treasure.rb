@@ -1,16 +1,16 @@
 class Treasure < ActiveRecord::Base
   before_create :set_default_status
 
-  DONE = 'DONE'
+  OPEN = 'OPEN'
+  ASSIGNED = 'ASSIGNED'
   CLOSED = 'CLOSED'
-  PENDING = 'PENDING'
 
   def self.states
-    { 'DONE' => DONE, 'PENDING' => PENDING, 'CLOSED' => CLOSED }
+    { 'OPEN' => OPEN, 'ASSIGNED' => ASSIGNED, 'CLOSED' => CLOSED }
   end
 
   private  
   def set_default_status
-    self.status = PENDING
+    self.status = OPEN
   end
 end

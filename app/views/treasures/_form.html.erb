@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_area :description, class: 'form-control' %>
+    <%= f.text_area :description, class: 'form-control', autofocus: true %>
   </div>
-  <% if [:new, :create].include?(params[:action]) %>
+  <% if ![:new, :create].include?(params[:action].to_sym) %>
     <div class="field">
       <%= f.label :status %><br>
-      <%= f.select :status, options_for_select(Treasure.states), {}, class: 'form-control' %>
+      <%= f.select :status, options_for_select(Treasure.states), { selected: @treasure.status }, class: 'form-control' %>
     </div>
   <% end %>
   <br>
