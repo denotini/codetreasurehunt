@@ -10,7 +10,7 @@ class TreasuresController < ApplicationController
   # GET /treasures
   # GET /treasures.json
   def index
-    @treasures = Treasure.all
+    @treasures = Treasure.all.order(updated_at: :desc, description: :asc)
   end
 
   # GET /treasures/1
@@ -19,7 +19,7 @@ class TreasuresController < ApplicationController
   end
 
   def filter
-    @treasures = Treasure.where(status: params[:status].upcase)
+    @treasures = Treasure.where(status: params[:status].upcase).order(updated_at: :desc, description: :asc)
   end
 
   # GET /treasures/new
