@@ -7,6 +7,12 @@ module TreasuresHelper
     end
   end
 
+  def treasure_page_title
+    unless params[:status].nil?
+      "#{params[:status].humanize} Treasures"
+    end
+  end
+
   private
   def safify(value)
     value.nil? ? nil : value.upcase
