@@ -1,18 +1,10 @@
-
-
-<p>
-  <strong>Description:</strong>
-  <%= @treasure.description %>
-</p>
-
-<p>
-  <strong>Status:</strong>
-  <%= @treasure.status %>
-</p>
-<p>
-  <strong>Assignee:</strong>
-  <%= @treasure.assignee %>
-</p>
-
-<%= link_to 'Edit', edit_treasure_path(@treasure) %> |
-<%= link_to 'Back', treasures_path %>
+<dl class="dl-horizontal">
+  <dt>Description</dt>
+  <dd><%= @treasure.description %></dd>
+  <dt>Status</dt>
+  <dd><%= @treasure.status %></dd>
+  <dt>&nbsp;</dt>
+  <dd></dd>
+  <dt>&nbsp;</dt>
+  <dd><%= link_to 'Edit', edit_treasure_path(@treasure) %> | <%= link_to 'Back', treasures_path %></dd>
+</dl>
