@@ -21,7 +21,7 @@
         <tr>
           <td><%= link_to treasure.description, treasure_path(treasure) %></td>
           <% if params[:status].nil? %>
-            <td width="50"><%= treasure.status %></td>
+            <td width="50"><span class=<%="#{treasure_label(treasure.status)}"%>><%= treasure.status %></span></td>
           <% end %>
           <td width="130"><%= "#{time_ago_in_words(treasure.updated_at)} ago" %></td>
           <td width="30"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>

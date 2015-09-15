@@ -13,6 +13,17 @@ module TreasuresHelper
     end
   end
 
+  def treasure_label(status)
+    case status
+      when Treasure::OPEN
+        "label-danger"
+      when Treasure::ASSIGNED
+        "label-warning"
+      when Treasure::CLOSED
+        "label-success"
+    end
+  end
+
   private
   def safify(value)
     value.nil? ? nil : value.upcase

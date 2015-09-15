@@ -46,3 +46,17 @@ tr.center {
          -o-transform:skew(8deg) rotate(3deg);
             transform:skew(8deg) rotate(3deg);
 }
+
+
+.label-warning, .label-success, .label-danger {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
