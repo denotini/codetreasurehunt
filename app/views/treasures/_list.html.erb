@@ -23,7 +23,7 @@
           <% if params[:status].nil? %>
             <td><span class=<%=treasure_label(treasure.status)%>><%= treasure.status %></span></td>
           <% end %>
-          <td><%= "#{time_ago_in_words(treasure.updated_at)} ago" %></td>
+          <td width="200"><%= "#{time_ago_in_words(treasure.updated_at)} ago" %></td>
           <td width="100"><%= link_to 'Edit', edit_treasure_path(treasure) %> | <%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
