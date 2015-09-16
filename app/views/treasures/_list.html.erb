@@ -12,7 +12,7 @@
           <th>Status</th>
         <% end %>
         <th>Last Activity</th>
-        <th colspan="2"></th>
+        <th></th>
       </tr>
     </thead>
 
@@ -21,11 +21,10 @@
         <tr>
           <td><%= link_to treasure.description, treasure_path(treasure) %></td>
           <% if params[:status].nil? %>
-            <td width="50"><span class=<%="#{treasure_label(treasure.status)}"%>><%= treasure.status %></span></td>
+            <td><span class=<%=treasure_label(treasure.status)%>><%= treasure.status %></span></td>
           <% end %>
-          <td width="130"><%= "#{time_ago_in_words(treasure.updated_at)} ago" %></td>
-          <td width="30"><%= link_to 'Edit', edit_treasure_path(treasure) %></td>
-          <td width="30"><%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= "#{time_ago_in_words(treasure.updated_at)} ago" %></td>
+          <td width="100"><%= link_to 'Edit', edit_treasure_path(treasure) %> | <%= link_to 'Delete', treasure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
 
