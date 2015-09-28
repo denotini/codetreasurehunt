@@ -18,9 +18,13 @@
   <% if ![:new, :create].include?(params[:action].to_sym) %>
     <div class="field">
       <%= f.label :status %><br>
-      <%= f.select :status, options_for_select(Treasure.states), { selected: @treasure.status }, class: 'form-control' %>
+      <%= f.select :status, options_for_select(Treasure.states), { selected: @treasure.status }, class: 'form-control', id: 'status' %>
     </div>
   <% end %>
+  <div id="assignee" class="field hide">
+    <%= f.label :assignee %><br>
+    <%= f.text_field :assignee, class: 'form-control' %>
+  </div>
   <br>
   <div class="actions pull-right">
     <%= f.submit class: 'btn btn-primary' %>
