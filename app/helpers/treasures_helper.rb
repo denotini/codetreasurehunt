@@ -24,6 +24,10 @@ module TreasuresHelper
     end
   end
 
+  def is_assigned?(status)
+    status.nil? ? false : (status.upcase == Treasure::ASSIGNED)
+  end
+
   private
   def safify(value)
     value.nil? ? nil : value.upcase
