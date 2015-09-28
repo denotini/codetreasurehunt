@@ -18,7 +18,7 @@
   <% if ![:new, :create].include?(params[:action].to_sym) %>
     <div class="field">
       <%= f.label :status %><br>
-      <%= f.select :status, options_for_select(Treasure.states), { selected: @treasure.status }, class: 'form-control', id: 'status' %>
+      <%= f.select :status, options_for_select(Treasure.states, @treasure.status), {}, class: 'form-control', id: 'status' %>
     </div>
   <% end %>
   <div id="assignee" class="field hide">
